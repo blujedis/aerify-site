@@ -1,21 +1,37 @@
-module.exports = (phase, { defaultConfig }) => {
+/**
+ * @see https://www.npmjs.com/package/next-compose-plugins
+ */
+const pkg = require('./package.json');
+const nextCompose = require('next-compose-plugins');
 
-  defaultConfig.future.webpack5 = true;
+const nextConfig = {
 
-  return {
+  env: {
+    NAME: pkg.name,
+    VERSION: pkg.version
+  },
 
-    ...defaultConfig,
+  reactStrictMode: true,
 
-    webpack: (config, { isServer }) => {
-      return config;
-    },
+  // @see https://nextjs.org/docs/api-reference/next.config.js/rewrites
+  // Quite powerful see above link for examples
+  async rewrites() {
+    return [
+      // Example:
+      // {
+      //   source: '/from/path',
+      //   destination: '/to/path'
+      // }
+    ]
+  },
 
-    // i18n: {
-    //   locales: ['en-US', 'es'],
-    //   defaultLocale: 'en-US'
-    // }
+  // i18n: {
+  //   locales: ['en-US', 'es'],
+  //   defaultLocale: 'en-US'
+  // }
 
-  };
+};
 
-
-}
+module.exports = nextCompose([
+ // your  
+], nextConfig);

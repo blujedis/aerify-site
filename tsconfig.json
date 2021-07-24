@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
     "target": "es5",
     "lib": [
       "dom",
@@ -17,8 +19,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "rootDir": ".",
-    "baseUrl": "."
+    "types": [
+      "webpack-env"
+    ]
   },
   "include": [
     "next-env.d.ts",

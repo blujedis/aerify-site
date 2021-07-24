@@ -1,35 +1,52 @@
 {
-  "name": "site",
-  "version": "0.1.0",
+  "name": "next-workshop",
+  "version": "0.0.1",
   "private": true,
-  "nsc": {
-    "dirs": "static"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint",
+    "runts": "NODE_OPTIONS=--no-warnings node --loader ts-node/esm"
   },
   "dependencies": {
-    "fast-glob": "^3.2.5",
-    "gray-matter": "^4.0.3",
-    "highlight.js": "^10.7.2",
-    "html-escaper": "^3.0.3",
-    "jsdom": "^16.5.3",
-    "markdown-it": "^12.0.6",
-    "marked": "^2.0.4",
-    "next": "10.2.2",
-    "next-static-pages": "^0.0.2-1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "sass": "^1.33.0"
+    "ansi-colors": "^4.1.1",
+    "express-request-id": "^1.4.1",
+    "framer-motion": "^4.1.17",
+    "lodash.defaultsdeep": "^4.6.1",
+    "lodash.merge": "^4.6.2",
+    "lokalo": "github:blujedis/lokalo#main",
+    "md5": "^2.3.0",
+    "next": "11.0.1",
+    "next-auth": "^3.27.0",
+    "next-connect": "^0.10.1",
+    "nprogress": "^0.2.0",
+    "on-headers": "^1.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0",
+    "restash": "^0.1.25",
+    "sass": "^1.35.1",
+    "swr": "^0.5.6"
   },
   "devDependencies": {
-    "@types/html-escaper": "^3.0.0",
-    "@types/jsdom": "^16.2.10",
-    "@types/markdown-it": "^12.0.1",
-    "@types/marked": "^2.0.2",
-    "@types/react": "17.0.6",
-    "typescript": "4.2.4"
+    "@types/express-request-id": "^1.4.1",
+    "@types/lodash.defaultsdeep": "^4.6.6",
+    "@types/lodash.merge": "^4.6.6",
+    "@types/md5": "^2.3.0",
+    "@types/node": "^16.0.0",
+    "@types/nprogress": "^0.2.0",
+    "@types/on-headers": "^1.0.0",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/webpack-env": "^1.16.2",
+    "eslint": "7.29.0",
+    "eslint-config-next": "11.0.1",
+    "globby": "^11.0.4",
+    "next-compose-plugins": "^2.2.1",
+    "ts-node": "^10.0.0",
+    "typescript": "4.3.4"
   }
 }

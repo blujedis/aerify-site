@@ -15,11 +15,13 @@ class MyDocument extends Document<{ initialState: any; }> {
 
     return (
       <Html>
-        <Head />
-        <script dangerouslySetInnerHTML={{ __html: `window.${SSR_KEY} = ${_initialState};` }} />
+        <Head>
+          <script dangerouslySetInnerHTML={{ __html: `window.${SSR_KEY} = ${_initialState};` }} />
+        </Head>
         <body>
           <Main />
           <NextScript />
+          <div id="test-calc" className="test-calc"></div>
         </body>
       </Html>
     );

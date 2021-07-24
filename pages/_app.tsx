@@ -1,7 +1,14 @@
 import type { AppProps } from 'next/app';
-import 'theme/global.scss';
+import Providers from '../providers';
+import 'theme/base.scss';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+function App(props: AppProps & { err?: Error & Record<string, any> }) {
+  const { Component, pageProps } = props;
+  return (
+    <Providers {...props}>
+      <Component {...pageProps} />
+    </Providers>
+  );
 }
-export default MyApp;
+
+export default App;
