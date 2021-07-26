@@ -24,10 +24,10 @@ const HomePage = () => {
         </div>
 
         <br />
-        <div className="test-calc debug">
+        {/* <div className="test-calc debug">
           &nbsp;
         </div>
-        <br />
+        <br /> */}
 
         <p>
           <input type="text" placeholder="enter name" className="is-warning" />
@@ -38,7 +38,7 @@ const HomePage = () => {
         </p>
 
         <p>
-          <select className="is-danger">
+          <select className="is-success">
             <option value="">Please Select</option>
             <option value="milton">Milton Waddams</option>
             <option value="peter">Peter Gibbons</option>

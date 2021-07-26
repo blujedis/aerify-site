@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "ansi-colors": "^4.1.1",
+    "bulma": "^0.9.3",
     "express-request-id": "^1.4.1",
     "framer-motion": "^4.1.17",
     "lodash.defaultsdeep": "^4.6.1",

@@ -21,7 +21,6 @@ class MyDocument extends Document<{ initialState: any; }> {
         <body>
           <Main />
           <NextScript />
-          <div id="test-calc" className="test-calc"></div>
         </body>
       </Html>
     );

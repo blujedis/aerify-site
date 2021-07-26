@@ -5,7 +5,10 @@ export const createGlobalStyles = <T extends Record<string, any>>(theme: T) => {
   return css`
       html,
       body {
+        height: 100%;
         min-height: 100%;
+        display: flex;
+        flex-direction: column;
       }
       body {
         background: ${theme.body.background};
